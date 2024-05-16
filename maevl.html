@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MAEVL</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="/css/style.css" rel="stylesheet">
+    <body>
+    <div class="container p-5 my-5 border">
+        <h2> Max EVs Levelcap Calculator</h2>
+            <form action="script.js" method="post">
+                <fieldset class="row">
+                    <div class="col">
+                        <label for="pokemonInputA">Select pokemon to level up</label>
+                        <input type="text" id="pokemonInputA" placeholder="Abomasnow">
+                        <div id="suggestionsA"></div>
+                        <label for="levelInputA">Enter the pokemon's level</label>
+                        <input type="number" id="levelInputA" max=100 min=1 placeholder="1">
+                        <label for="initialExp">Enter the pokemon's remaining exp to level up</label>
+                        <input type="number" id="initialExp" max=100000 min=1 placeholder="50">  
+                        <label for="pokemonInputB">Enter the pokemon you will grind EVs on</label>
+                        <input type="text" id="pokemonInputB" placeholder="Lillipup">   
+                        <div id="suggestionsB"></div>
+                    </div> 
+                    <div class="col">
+                        <label for="pokemonInputB">Enter the level of the pokemon you will grind EVs on</label>
+                        <input type="text" id="levelInputB" placeholder="3">   
+                        <label for="levelCap">Enter the desired levelcap</label>
+                        <input type="text" id="levelCap" placeholder="10"> 
+                        <label for="finalExp">How much exp should it have remaining to level up (It will calculate closest number before level cap)</label>
+                        <input type="text" id="finalExp" placeholder="1">
+                    </div>
+                </fieldset>
+                <input type="button" class="btn" value="Calculate" id="calculateBtn">
+            </form>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
